@@ -22,12 +22,12 @@ public class EquipDetection : MonoBehaviour
         equipment.Equip();
         currentEquipment = equipment;
 
-        StartCoroutine(StartEquiping(equipment.transform));
+        StartCoroutine(StartEquiping(equipment.transform.parent));
     }
 
     public void UnequipCurrentEquipment()
     {
-        currentEquipment.transform.parent = defaultParent;
+        currentEquipment.transform.parent.parent = defaultParent;
         currentEquipment.Unequip();
         currentEquipment = null;
     }

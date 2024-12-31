@@ -5,19 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Start.unity
     guid: 53bd6cce5d993cb48898cd669934ad72
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Level1 REVAMP.unity
     guid: 0463cb697f2a06247980a17933d458d9
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Fail Scene.unity
     guid: 94cce7764126c624b9365de2c98c2297
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/ShaderTest.unity
     guid: 6ead11a878d353641a48971c3e589c5b
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/XRMETASDK.unity
     guid: be53f9151a34cb14dbc03c51244482b7
   - enabled: 1

@@ -39,13 +39,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 210769013299269824}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b3597a38bfc52b4093a80a16bf47ddf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instructionToolTip: {fileID: 4566345754008536631}
-  connectedInterable: {fileID: 830554213604258612}
 --- !u!1 &924483046516971522
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,7 +799,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2076770782541045313
 RectTransform:
   m_ObjectHideFlags: 0
@@ -925,6 +923,7 @@ GameObject:
   - component: {fileID: 7802906960186607704}
   - component: {fileID: 6096126898017731423}
   - component: {fileID: 5879315316938432003}
+  - component: {fileID: 7359694520522911471}
   m_Layer: 0
   m_Name: HandGrab
   m_TagString: Untagged
@@ -940,8 +939,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5654770509546522057}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.57859594, y: -0.40648094, z: -0.40648094, w: 0.57859594}
-  m_LocalPosition: {x: 0.50299376, y: 0.059411645, z: -0.17419994}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.09999997, y: 0.09999998, z: 0.09999998}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1053,6 +1052,23 @@ MonoBehaviour:
   _releaseDistance: 0
   _resetGrabOnGrabsUpdated: 1
   _physicsGrabbable: {fileID: 0}
+--- !u!114 &7359694520522911471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5654770509546522057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4609bb9543fcbd44b9b16d40fe9d48c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equipingDistance: 0.2
+  mesh: {fileID: 7384552816967340994}
+  rb: {fileID: 316760345410910581}
+  descriptionUI: {fileID: 4566345754008536631}
+  currentEquipDetection: {fileID: 0}
 --- !u!1 &7384552816967340994
 GameObject:
   m_ObjectHideFlags: 0
@@ -1154,7 +1170,6 @@ GameObject:
   - component: {fileID: 2547615008220992783}
   - component: {fileID: 3723584865528557496}
   - component: {fileID: 316760345410910581}
-  - component: {fileID: 830554213604258612}
   m_Layer: 13
   m_Name: Headphone
   m_TagString: Headphones
@@ -1230,23 +1245,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &830554213604258612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7768604206103747506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4609bb9543fcbd44b9b16d40fe9d48c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isGrab: 0
-  equipingDistance: 0.2
-  mesh: {fileID: 7384552816967340994}
-  rb: {fileID: 316760345410910581}
-  currentEquipDetection: {fileID: 0}
 --- !u!1001 &6680593352616242919
 PrefabInstance:
   m_ObjectHideFlags: 0

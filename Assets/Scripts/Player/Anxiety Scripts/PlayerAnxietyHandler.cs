@@ -235,6 +235,7 @@ namespace Assets.Scripts.Player.Anxiety_Scripts
 
             float RunAsyncGPU(RenderTexture rt)
             {
+                // print($"RT texture {rt.width}x{rt.height}");
                 // Check if the Texture2D needs to be created or resized
                 if (lumTex2D == null || lumTex2D.width != rt.width || lumTex2D.height != rt.height)
                     lumTex2D = new Texture2D(rt.width, rt.height, TextureFormat.RGBA32, false);

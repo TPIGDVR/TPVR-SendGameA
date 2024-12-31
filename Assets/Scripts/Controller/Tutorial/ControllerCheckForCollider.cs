@@ -26,43 +26,7 @@ public class ControllerCheckForCollider : MonoBehaviour
         lineRenderer.useWorldSpace = false;
         cameraTransform = Camera.main.transform;
     }
-    // Update is called once per frame
-    // void Update()
-    // {
-    //     #region  legacy code
-    //     // Vector3 dirAwayFromController = directionAwayFromTheController.normalized;
-    //     // dirAwayFromController *= weightForDirectionAwayFromController;
-
-    //     // //then check whether the stateText hits the player.
-    //     // Vector3 dirTowardsCamera = (mainCamera.transform.position - transform.position).normalized;
-    //     // ray = new Ray(mainCamera.transform.position, -dirTowardsCamera);
-    //     // //dirTowardsCamera += shiftOffset;
-    //     // dirTowardsCamera.Normalize();
-
-    //     // dirTowardsCamera *= weightForDirectionTowardsCamera;
-
-    //     // bool hasHit = Physics.Raycast(ray, out RaycastHit hitinfo, 5f, layerMask);
-
-    //     // //if (hasHit)
-    //     // //    Debug.Log($"Collider hit {hitinfo.collider.name}");
-    //     // hasHit = false; //Band-aid patch for now
-
-    //     // Vector3 upwardOffset = hasHit ? Vector3.up * 0.2f : Vector3.zero;
-
-    //     // Vector3 TargetPosition = parentControllerComponent.position +
-    //     //             dirAwayFromController +
-    //     //             dirTowardsCamera +
-    //     //             upwardOffset +
-    //     //             shiftOffset;
-
-    //     //transform.position = Vector3.Lerp(transform.position,
-    //     //    TargetPosition,
-    //     //    math.saturate(Time.deltaTime * 5f));
-
-    //     // transform.position = TargetPosition;
-    //     #endregion
-    // }
-
+   
     void OnDestroy()
     {
         EventSystem.level.RemoveListener(LevelEvents.FINISH_TUTORIAL, OnEndTutorial);
@@ -72,7 +36,7 @@ public class ControllerCheckForCollider : MonoBehaviour
     private void Update()
     {
         Vector3 targetPosition = targetControl.TransformPoint(targetOffset);
-        print($"Target Position {targetPosition} targetControl Position {targetControl.position}");
+        // print($"Target Position {targetPosition} targetControl Position {targetControl.position}");
         if (!RaycastFromPointToPoint(targetPosition, cameraTransform.position))
         {
             //if hit the controller instead of the head.
@@ -125,11 +89,11 @@ public class ControllerCheckForCollider : MonoBehaviour
         {
             if (hit.collider.CompareTag("Player Head")) hasHit = true;
             else hasHit = false;
-            print($"{hit.collider.tag} has hit{hasHit}");
+            // print($"{hit.collider.tag} has hit{hasHit}");
         }
         else
         {
-            print("Not hit");
+            // print("Not hit");
             hasHit = false;
         }
 

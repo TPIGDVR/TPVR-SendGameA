@@ -18,7 +18,7 @@ MonoBehaviour:
     InjectionPoint: 600
     Requirements: 4
     ProfilerName: GRAB LUMINANCE TEX
-    DownscaleSize: 512
+    DownscaleSize: 206
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0

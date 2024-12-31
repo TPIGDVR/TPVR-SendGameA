@@ -24,6 +24,7 @@ public class GrabCheck : MonoBehaviour
 
     private GameObject Retrieve()
     {
+        //get all the collider around the sphere and try and get the interactable game object
         var collider = Physics.OverlapSphere(transform.position, searchRadius, interactableMask);
         print($"this is running {collider?.Length}");
         if (collider.Length == 0) return null;

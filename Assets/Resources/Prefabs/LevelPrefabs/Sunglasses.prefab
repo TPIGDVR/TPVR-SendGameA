@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 8475873691034207767}
   - component: {fileID: 8076467305051039956}
   - component: {fileID: 7104773323885958920}
+  - component: {fileID: 1294928052291219690}
   m_Layer: 0
   m_Name: HandGrab
   m_TagString: Untagged
@@ -218,6 +219,23 @@ MonoBehaviour:
   _releaseDistance: 0
   _resetGrabOnGrabsUpdated: 1
   _physicsGrabbable: {fileID: 0}
+--- !u!114 &1294928052291219690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302734510931973786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a14bf3cad4531ab41bd702527b129aae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equipingDistance: 0.2
+  mesh: {fileID: 2882857977136807661}
+  rb: {fileID: 5848456447165611461}
+  descriptionUI: {fileID: 4726007549756601121}
+  currentEquipDetection: {fileID: 0}
 --- !u!1 &1358126508131702847
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,7 +247,6 @@ GameObject:
   - component: {fileID: 9062313782037494522}
   - component: {fileID: 7612831100954180742}
   - component: {fileID: 5848456447165611461}
-  - component: {fileID: 3223968094879328514}
   m_Layer: 13
   m_Name: Sunglasses
   m_TagString: Sunglasses
@@ -305,23 +322,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3223968094879328514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358126508131702847}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a14bf3cad4531ab41bd702527b129aae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isGrab: 0
-  equipingDistance: 0.2
-  mesh: {fileID: 2882857977136807661}
-  rb: {fileID: 5848456447165611461}
-  currentEquipDetection: {fileID: 0}
 --- !u!1 &2003021985992273955
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,7 +338,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6602444967163859677
 Transform:
   m_ObjectHideFlags: 0
@@ -366,8 +366,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b3597a38bfc52b4093a80a16bf47ddf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instructionToolTip: {fileID: 4726007549756601121}
-  connectedInterable: {fileID: 3223968094879328514}
 --- !u!1 &2035349952139471251
 GameObject:
   m_ObjectHideFlags: 0
