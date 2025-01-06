@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    
     public float equipingDistance = 1f;
     public GameObject mesh;
     public Rigidbody rb;

@@ -42,4 +42,56 @@ public class StartMenu : MonoBehaviour
         }
 
     }
+
+    public void StartSceneByName(string name)
+    {
+        StartCoroutine(LoadLevelByName((name)));
+    }
+
+    public void StartSceneByIndex(int index)
+    {
+        StartCoroutine(LoadLevelByBuildIndex(index));
+    }
+    IEnumerator LoadLevelByName(string name)
+    {
+        print(name);
+        playerVFX.BeginFadeScreen();
+        yield return null;
+        int nextIndex = SceneManager.GetSceneByName(name).buildIndex;
+
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        while (!playerVFX.isFaded)
+        {
+            yield return null;
+        }
+
+        var loadingNextScene = SceneManager.LoadSceneAsync(nextIndex);
+        while (!loadingNextScene.isDone)
+        {
+            print("loading scene");
+            yield return null;
+        }
+
+    }
+
+    IEnumerator LoadLevelByBuildIndex(int buildIndex)
+    {
+        print(name);
+        playerVFX.BeginFadeScreen();
+        yield return null;
+
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        while (!playerVFX.isFaded)
+        {
+            yield return null;
+        }
+
+        var loadingNextScene = SceneManager.LoadSceneAsync(buildIndex);
+        while (!loadingNextScene.isDone)
+        {
+            print("loading scene");
+            yield return null;
+        }
+    }
+
 }

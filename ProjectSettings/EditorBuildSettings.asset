@@ -23,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level2 Revamp.unity
     guid: 9ce26e28fa950da4d949297bd817e115
+  - enabled: 1
+    path: Assets/Scenes/PM wong Demo Scene.unity
+    guid: 82f9a54c2bc98a046b3bf9efd87e9a39
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 99307be0fd54f75409ebfe8feaf76c17,
       type: 2}

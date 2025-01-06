@@ -15,7 +15,7 @@ public class Level : MonoBehaviour, IScriptLoadQueuer
     Level_Door door;
     [SerializeField]
     Room startingRoom;
-
+    
     Vector3 respawnPosition;
     public void Initialize()
     {

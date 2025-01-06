@@ -42,7 +42,6 @@ public class GrabbingTest : MonoBehaviour
     
     void OnUnSet(GrabInteractable grabInteractor)
     {
-        print("on unset");
         if (grabInteractor.TryGetComponent<Interactable>(out var interactable))
         {
             print($"Setting {interactable.gameObject.name}");
