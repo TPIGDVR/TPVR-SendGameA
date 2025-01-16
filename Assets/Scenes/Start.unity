@@ -2754,8 +2754,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You will take on the role of a person who suffers from Autism Spectrum
-    Disorder symptoms. '
+  m_text: 'You will take on the role of a person who is diagnose with Autism Spectrum
+    Disorder. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}

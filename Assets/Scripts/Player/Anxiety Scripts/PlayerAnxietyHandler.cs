@@ -73,7 +73,6 @@ namespace Assets.Scripts.Player.Anxiety_Scripts
 
         public void CalculateAnxiety()
         {
-
             DetermineAnxietyScale();
             if (!CanRun || isDead)
             {
