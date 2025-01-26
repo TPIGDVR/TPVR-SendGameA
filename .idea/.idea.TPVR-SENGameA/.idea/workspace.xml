@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa36ad55-70ad-4d36-87f3-39c6df519f45" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Experiement (Voice Recognition)/Butterworth.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Experiement (Voice Recognition)/Butterworth.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TPVR-SENGameA/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TPVR-SENGameA/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Breath Detection/SimpleMicPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Breath Detection/SimpleMicPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Breathing Testing part 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Breathing Testing part 2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Breathing Detection Part 2/AnotherAnalysis.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Breathing Detection Part 2/AnotherAnalysis.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +131,11 @@
       <workItem from="1737098097814" duration="4503000" />
       <workItem from="1737174620398" duration="3924000" />
       <workItem from="1737198075269" duration="10237000" />
+      <workItem from="1737212977196" duration="729000" />
+      <workItem from="1737253566781" duration="2093000" />
+      <workItem from="1737337897232" duration="1639000" />
+      <workItem from="1737430882359" duration="2957000" />
+      <workItem from="1737552102840" duration="1872000" />
     </task>
     <servers />
   </component>
